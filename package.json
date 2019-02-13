@@ -16,10 +16,12 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "extension.weather",
-      "title": "weather"
-    }]
+    "commands": [
+      {
+        "command": "extension.weather",
+        "title": "weather"
+      }
+    ]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
@@ -30,7 +32,9 @@
     "vscode": "^1.1.28",
     "eslint": "^5.13.0",
     "@types/node": "^10.12.21",
-    "@types/mocha": "^2.2.42",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
     "axios": "^0.18.0"
   }
 }
