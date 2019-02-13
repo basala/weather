@@ -4,7 +4,8 @@
   "displayName": "weather",
   "description": "city weather",
   "repository": "https://github.com/basala/weather.git",
-  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.31.0"
   },
@@ -16,12 +17,10 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "extension.weather",
-        "title": "weather"
-      }
-    ]
+    "commands": [{
+      "command": "extension.weather",
+      "title": "weather"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
